@@ -26,6 +26,6 @@ python3 -m http.server 8090
 
 Published with GitHub Pages from the `main` branch root:
 
-https://licolite.github.io/licolite.com/
+https://licolite.com
 
-To switch to `https://licolite.com`, point the domain DNS to GitHub Pages and add a `CNAME` file containing `licolite.com`.
+The `CNAME` file binds the GitHub Pages site to `licolite.com`. DNS should point the apex domain to GitHub Pages A/AAAA records, and `www` should CNAME to `licolite.github.io`.
