@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════════════════════════
    LicoLite — Official Website Styles
-   Brand: Obsidian dark, Licorice Gold, Ice Blue, Prism Violet
+   Brand: Charcoal Lite, Licorice Gold, Ice Blue, Prism Violet
    ═══════════════════════════════════════════════════════════════════════════ */
 
 /* ── Reset & Base ──────────────────────────────────────────────────────────── */
@@ -20,9 +20,9 @@
   --ice: #4fc3f7;
   --ice-light: #80deea;
   --violet: #a78bfa;
-  --obsidian: #0a0a14;
-  --obsidian-light: #12121e;
-  --obsidian-surface: #16162a;
+  --obsidian: #1e1d22;
+  --obsidian-light: #27262c;
+  --obsidian-surface: #302f36;
   --linen: #ede6d6;
   --linen-dim: #b0a899;
   --slate: #5a6a7a;
@@ -81,7 +81,7 @@ img {
 }
 
 .nav-scrolled {
-  background: rgba(10, 10, 20, 0.85);
+  background: rgba(30, 29, 34, 0.88);
   backdrop-filter: blur(20px) saturate(1.2);
   -webkit-backdrop-filter: blur(20px) saturate(1.2);
   border-bottom-color: rgba(201, 169, 110, 0.08);
@@ -181,10 +181,10 @@ img {
 .hero-grid {
   position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(rgba(201, 169, 110, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(201, 169, 110, 0.02) 1px, transparent 1px);
-  background-size: 80px 80px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='138.56'%3E%3Cline x1='0' y1='0' x2='80' y2='0' stroke='rgb(201,169,110)' stroke-opacity='.025' stroke-width='1'/%3E%3Cline x1='0' y1='69.28' x2='80' y2='69.28' stroke='rgb(201,169,110)' stroke-opacity='.025' stroke-width='1'/%3E%3Cline x1='0' y1='0' x2='80' y2='138.56' stroke='rgb(201,169,110)' stroke-opacity='.025' stroke-width='1'/%3E%3Cline x1='0' y1='138.56' x2='80' y2='0' stroke='rgb(201,169,110)' stroke-opacity='.025' stroke-width='1'/%3E%3C/svg%3E");
+  background-size: 80px 138.56px;
+  background-position: center top;
+  background-repeat: repeat;
   mask-image: radial-gradient(ellipse 60% 50% at 50% 50%, black 20%, transparent 70%);
   -webkit-mask-image: radial-gradient(ellipse 60% 50% at 50% 50%, black 20%, transparent 70%);
 }
@@ -388,14 +388,14 @@ img {
 .feature-card {
   padding: 32px;
   border-radius: 12px;
-  background: rgba(22, 22, 42, 0.4);
+  background: rgba(48, 47, 54, 0.4);
   border: 1px solid rgba(201, 169, 110, 0.06);
   transition: border-color 0.3s, background 0.3s, transform 0.3s;
 }
 
 .feature-card:hover {
   border-color: rgba(201, 169, 110, 0.12);
-  background: rgba(22, 22, 42, 0.7);
+  background: rgba(48, 47, 54, 0.7);
   transform: translateY(-2px);
 }
 
@@ -422,7 +422,7 @@ img {
 /* ── Architecture Section ──────────────────────────────────────────────────── */
 .architecture {
   padding: var(--section-pad) 0;
-  background: linear-gradient(180deg, transparent 0%, rgba(22, 22, 42, 0.3) 50%, transparent 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(48, 47, 54, 0.3) 50%, transparent 100%);
 }
 
 .arch-grid {
@@ -434,7 +434,7 @@ img {
 .arch-card {
   padding: 28px;
   border-radius: 12px;
-  background: rgba(10, 10, 20, 0.6);
+  background: rgba(30, 29, 34, 0.6);
   border: 1px solid rgba(79, 195, 247, 0.06);
   transition: border-color 0.3s, transform 0.3s;
 }
@@ -513,14 +513,14 @@ img {
 .integration-item {
   padding: 12px 24px;
   border-radius: 8px;
-  background: rgba(22, 22, 42, 0.5);
+  background: rgba(48, 47, 54, 0.5);
   border: 1px solid rgba(201, 169, 110, 0.06);
   transition: border-color 0.3s, background 0.3s;
 }
 
 .integration-item:hover {
   border-color: rgba(201, 169, 110, 0.15);
-  background: rgba(22, 22, 42, 0.8);
+  background: rgba(48, 47, 54, 0.8);
 }
 
 .integration-name {
@@ -548,7 +548,7 @@ img {
 .quickstart {
   padding: var(--section-pad) 0;
   position: relative;
-  background: linear-gradient(180deg, rgba(22, 22, 42, 0.2) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(48, 47, 54, 0.2) 0%, transparent 100%);
 }
 
 .quickstart-grid {
@@ -563,7 +563,7 @@ img {
   gap: 20px;
   padding: 28px;
   border-radius: 12px;
-  background: rgba(10, 10, 20, 0.5);
+  background: rgba(30, 29, 34, 0.5);
   border: 1px solid rgba(201, 169, 110, 0.08);
   transition: border-color 0.3s, transform 0.3s;
 }
@@ -613,7 +613,7 @@ img {
   font-size: 12.5px;
   padding: 8px 16px;
   border-radius: 6px;
-  background: rgba(22, 22, 42, 0.8);
+  background: rgba(48, 47, 54, 0.8);
   border: 1px solid rgba(79, 195, 247, 0.1);
   color: var(--ice);
   letter-spacing: 0.2px;

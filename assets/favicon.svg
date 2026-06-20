@@ -7,48 +7,59 @@
     </linearGradient>
     <linearGradient id="i" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#4fc3f7"/>
-      <stop offset="50%" stop-color="#80deea"/>
+      <stop offset="50%" stop-color="#b0e8f5"/>
       <stop offset="100%" stop-color="#26a8d8"/>
     </linearGradient>
     <linearGradient id="f" x1="0" y1="0" x2="0.5" y2="1">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.1"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
-  <!-- Dark background circle -->
-  <circle cx="32" cy="32" r="32" fill="#0a0a14"/>
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#1e1d22"/>
 
-  <!-- Outer hexagon frame -->
+  <!-- Outer hexagon -->
   <polygon fill="none"
-    points="32,6 54.5,19 54.5,45 32,58 9.5,45 9.5,19"
-    stroke="url(#g)" stroke-width="0.5" opacity="0.3"/>
-
-  <!-- Second hexagon rotated 30deg -->
-  <polygon fill="none"
-    points="32,8.5 52,20.25 52,43.75 32,55.5 12,43.75 12,20.25"
-    stroke="url(#i)" stroke-width="0.4" opacity="0.2"
-    transform="rotate(30 32 32)"/>
-
-  <!-- Lattice lines -->
-  <line x1="32" y1="12" x2="32" y2="52" stroke="url(#i)" stroke-width="0.4" opacity="0.2"/>
-  <line x1="14.7" y1="22" x2="49.3" y2="42" stroke="url(#i)" stroke-width="0.4" opacity="0.2"/>
-  <line x1="14.7" y1="42" x2="49.3" y2="22" stroke="url(#i)" stroke-width="0.4" opacity="0.2"/>
+    points="32,8 52.8,19.5 52.8,44.5 32,56 11.2,44.5 11.2,19.5"
+    stroke="url(#g)" stroke-width="0.4" opacity="0.2"/>
 
   <!-- Inner hexagon — crystal core -->
   <polygon
-    points="32,20 43,26 43,38 32,44 21,38 21,26"
-    fill="url(#f)" stroke="url(#g)" stroke-width="1" opacity="0.55"/>
+    points="32,20 42.5,26 42.5,38 32,44 21.5,38 21.5,26"
+    fill="url(#f)" stroke="url(#g)" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- Facet highlight -->
+  <polygon points="32,20 42.5,26 32,32" fill="#ffffff" opacity="0.06"/>
+
+  <!-- Lattice lines -->
+  <g opacity="0.18" stroke="url(#i)" stroke-width="0.35">
+    <line x1="32" y1="20" x2="32" y2="44"/>
+    <line x1="21.5" y1="26" x2="42.5" y2="38"/>
+    <line x1="21.5" y1="38" x2="42.5" y2="26"/>
+  </g>
 
   <!-- Lattice nodes -->
-  <circle cx="32" cy="20" r="1.5" fill="#80deea" opacity="0.5"/>
-  <circle cx="43" cy="26" r="1.5" fill="#c9a96e" opacity="0.5"/>
-  <circle cx="43" cy="38" r="1.5" fill="#80deea" opacity="0.45"/>
-  <circle cx="32" cy="44" r="1.5" fill="#c9a96e" opacity="0.5"/>
-  <circle cx="21" cy="38" r="1.5" fill="#80deea" opacity="0.45"/>
-  <circle cx="21" cy="26" r="1.5" fill="#c9a96e" opacity="0.5"/>
+  <g opacity="0.55">
+    <circle cx="32" cy="20" r="1.1" fill="#b0e8f5"/>
+    <circle cx="42.5" cy="26" r="1.1" fill="#f0d28c"/>
+    <circle cx="42.5" cy="38" r="1.1" fill="#b0e8f5"/>
+    <circle cx="32" cy="44" r="1.1" fill="#f0d28c"/>
+    <circle cx="21.5" cy="38" r="1.1" fill="#b0e8f5"/>
+    <circle cx="21.5" cy="26" r="1.1" fill="#f0d28c"/>
+  </g>
 
   <!-- Central brilliant -->
-  <circle cx="32" cy="32" r="3" fill="url(#g)" opacity="0.65"/>
-  <circle cx="32" cy="32" r="1.5" fill="#ffffff" opacity="0.55"/>
+  <circle cx="32" cy="32" r="2.2" fill="url(#g)" opacity="0.6"/>
+  <circle cx="32" cy="32" r="1" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Radial rays — 6-fold symmetric -->
+  <g stroke="url(#i)" stroke-width="0.45" opacity="0.3">
+    <line x1="32" y1="19" x2="32" y2="11"/>
+    <line x1="43.2" y1="25.5" x2="50.5" y2="21"/>
+    <line x1="43.2" y1="38.5" x2="50.5" y2="43"/>
+    <line x1="32" y1="45" x2="32" y2="53"/>
+    <line x1="20.8" y1="38.5" x2="13.5" y2="43"/>
+    <line x1="20.8" y1="25.5" x2="13.5" y2="21"/>
+  </g>
 </svg>
