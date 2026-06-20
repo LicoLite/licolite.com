@@ -363,6 +363,83 @@ img {
   margin: 0 auto;
 }
 
+/* ── Capability Matrix ──────────────────────────────────────────────────────── */
+.capabilities {
+  padding: var(--section-pad) 0;
+  position: relative;
+}
+
+.cap-matrix {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cap-domain {
+  padding: 28px;
+  border-radius: 12px;
+  background: rgba(18, 19, 24, 0.5);
+  border: 1px solid rgba(86, 212, 232, 0.05);
+  transition: border-color 0.3s, background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.cap-domain:hover {
+  border-color: rgba(86, 212, 232, 0.12);
+  background: rgba(34, 34, 48, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(86, 212, 232, 0.03);
+}
+
+.cap-domain-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(228, 184, 74, 0.06);
+}
+
+.cap-domain-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.cap-domain-header h3 {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: var(--linen);
+}
+
+.cap-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cap-list li {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--slate);
+  padding-left: 16px;
+  position: relative;
+}
+
+.cap-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--amber);
+  opacity: 0.5;
+}
+
 /* ── Features Section — Selling Points ─────────────────────────────────────── */
 .features {
   padding: 0;
@@ -808,6 +885,12 @@ img {
 }
 
 /* ── Responsive ────────────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .cap-matrix {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   :root {
     --section-pad: 80px;
@@ -828,6 +911,10 @@ img {
   }
 
   .deploy-paths {
+    grid-template-columns: 1fr;
+  }
+
+  .cap-matrix {
     grid-template-columns: 1fr;
   }
 
@@ -878,6 +965,7 @@ img {
 /* ── Animations ────────────────────────────────────────────────────────────── */
 @media (prefers-reduced-motion: no-preference) {
   .deploy-path,
+  .cap-domain,
   .sp-card,
   .arch-card,
   .integration-item {
@@ -888,6 +976,13 @@ img {
 
   .deploy-path:nth-child(1) { animation-delay: 0.05s; }
   .deploy-path:nth-child(2) { animation-delay: 0.15s; }
+
+  .cap-domain:nth-child(1) { animation-delay: 0.05s; }
+  .cap-domain:nth-child(2) { animation-delay: 0.1s; }
+  .cap-domain:nth-child(3) { animation-delay: 0.15s; }
+  .cap-domain:nth-child(4) { animation-delay: 0.2s; }
+  .cap-domain:nth-child(5) { animation-delay: 0.25s; }
+  .cap-domain:nth-child(6) { animation-delay: 0.3s; }
 
   .sp-card:nth-child(1) { animation-delay: 0.05s; }
   .sp-card:nth-child(2) { animation-delay: 0.12s; }
