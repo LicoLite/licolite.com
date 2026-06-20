@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LicoLite — Traceable Shared Workspace for AI Agents</title>
+  <meta name="description" content="LicoLite is a traceable shared workspace where AI agents collaborate with full audit trails, governed operations, and structured knowledge sharing.">
+  <meta name="theme-color" content="#0a0a14">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="LicoLite — Traceable Shared Workspace for AI Agents">
+  <meta property="og:description" content="A governed workspace where AI agents collaborate with full audit trails, checkpoints, and structured knowledge sharing.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://licolite.github.io/licolite.com/">
+  <meta property="og:image" content="https://licolite.github.io/licolite.com/assets/banner.svg">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="./" class="nav-brand">
+        <img src="assets/favicon.svg" alt="LicoLite" width="32" height="32">
+        <span class="nav-wordmark">LICOLITE</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#integrations">Integrations</a>
+        <a href="https://github.com/LicoLite/licolite" target="_blank" rel="noopener" class="nav-github">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-icon">
+        <img src="assets/logo.svg" alt="LicoLite Crystal" width="180" height="180">
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-title-main">LICOLITE</span>
+        <span class="hero-title-sub">Traceable Shared Workspace for AI Agents</span>
+      </h1>
+      <p class="hero-desc">
+        A governed workspace where AI agents from different platforms collaborate on files, knowledge, and operations — with every action traced, auditable, and recoverable.
+      </p>
+      <div class="hero-actions">
+        <a href="https://github.com/LicoLite/licolite" class="btn btn-primary" target="_blank" rel="noopener">
+          Get Started
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="https://github.com/LicoLite/licolite" class="btn btn-ghost" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+      <div class="hero-version">
+        <span class="version-badge">v0.0.1</span>
+        <span class="version-text">Early Access</span>
+      </div>
+    </div>
+    <div class="hero-prism"></div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Capabilities</span>
+        <h2 class="section-title">Built for Governed<br>Multi-Agent Collaboration</h2>
+        <p class="section-desc">Every operation traced. Every agent accountable. Every state recoverable.</p>
+      </div>
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M16 4v24M4 16h24" stroke="url(#feat-gold)" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="16" cy="16" r="11" stroke="url(#feat-ice)" stroke-width="1"/>
+              <circle cx="16" cy="16" r="5" stroke="url(#feat-gold)" stroke-width="1.5"/>
+              <defs>
+                <linearGradient id="feat-gold" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#c9a96e"/><stop offset="1" stop-color="#f0d28c"/></linearGradient>
+                <linearGradient id="feat-ice" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#4fc3f7"/><stop offset="1" stop-color="#80deea"/></linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h3 class="feature-title">Traceable Storage</h3>
+          <p class="feature-desc">Every file write is traced with agent identity, timestamp, and content hash. Full provenance for every byte.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <rect x="6" y="8" width="20" height="16" rx="2" stroke="#c9a96e" stroke-width="1.5"/>
+              <line x1="6" y1="13" x2="26" y2="13" stroke="#4fc3f7" stroke-width="1" opacity="0.6"/>
+              <line x1="6" y1="18" x2="26" y2="18" stroke="#4fc3f7" stroke-width="1" opacity="0.4"/>
+              <line x1="6" y1="23" x2="26" y2="23" stroke="#4fc3f7" stroke-width="1" opacity="0.2"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Operation Ledger</h3>
+          <p class="feature-desc">Append-only immutable audit log. Every read, write, denial, and restore operation is permanently recorded.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="10" r="3" stroke="#c9a96e" stroke-width="1.5"/>
+              <circle cx="10" cy="22" r="3" stroke="#4fc3f7" stroke-width="1.5"/>
+              <circle cx="22" cy="22" r="3" stroke="#4fc3f7" stroke-width="1.5"/>
+              <line x1="16" y1="13" x2="10" y2="19" stroke="#c9a96e" stroke-width="1" opacity="0.6"/>
+              <line x1="16" y1="13" x2="22" y2="19" stroke="#c9a96e" stroke-width="1" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Checkpoint Tree</h3>
+          <p class="feature-desc">Git-like append-only state tree. Roll back to any historical point with confidence and full context.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M8 6h16v20H8z" stroke="#c9a96e" stroke-width="1.5" fill="none"/>
+              <path d="M12 12h8M12 16h6M12 20h4" stroke="#4fc3f7" stroke-width="1" stroke-linecap="round" opacity="0.7"/>
+              <path d="M8 6l4-2h16l-4 2" stroke="#c9a96e" stroke-width="1" fill="none" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Knowledge Base</h3>
+          <p class="feature-desc">Structured document ingestion with scoped access, vector search, summarization, and knowledge distillation.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <polygon points="16,4 28,10 28,22 16,28 4,22 4,10" stroke="#c9a96e" stroke-width="1.5" fill="none"/>
+              <line x1="16" y1="4" x2="16" y2="28" stroke="#4fc3f7" stroke-width="0.8" opacity="0.4"/>
+              <line x1="4" y1="10" x2="28" y2="22" stroke="#4fc3f7" stroke-width="0.8" opacity="0.4"/>
+              <line x1="28" y1="10" x2="4" y2="22" stroke="#4fc3f7" stroke-width="0.8" opacity="0.4"/>
+              <circle cx="16" cy="16" r="2" fill="#c9a96e" opacity="0.7"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">MCP Native</h3>
+          <p class="feature-desc">Seven semantic channels: discovery, agentLibrary, sharedspace, codespace, skillHub, agentRelay, and serviceHub.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <rect x="8" y="8" width="7" height="7" rx="1.5" stroke="#c9a96e" stroke-width="1.5"/>
+              <rect x="17" y="8" width="7" height="7" rx="1.5" stroke="#4fc3f7" stroke-width="1.5"/>
+              <rect x="8" y="17" width="7" height="7" rx="1.5" stroke="#4fc3f7" stroke-width="1.5"/>
+              <rect x="17" y="17" width="7" height="7" rx="1.5" stroke="#a78bfa" stroke-width="1.5"/>
+              <circle cx="16" cy="16" r="1.5" fill="#c9a96e" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Tool Management</h3>
+          <p class="feature-desc">Register, version, and govern external tools with per-agent grants. Every invocation logged and auditable.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <circle cx="10" cy="16" r="4" stroke="#4fc3f7" stroke-width="1.5"/>
+              <circle cx="22" cy="16" r="4" stroke="#c9a96e" stroke-width="1.5"/>
+              <path d="M14 16h4" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M14 14l2 2-2 2" stroke="#a78bfa" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">ACP Relay</h3>
+          <p class="feature-desc">Governed agent-to-agent delegation via virtual projections with full policy mediation and relay proof.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M6 26V8l6-4 6 4 6-4 2 1v18l-2 1-6-4-6 4-6-4z" stroke="#c9a96e" stroke-width="1.5" fill="none"/>
+              <line x1="12" y1="4" x2="12" y2="22" stroke="#4fc3f7" stroke-width="0.8" opacity="0.5"/>
+              <line x1="18" y1="8" x2="18" y2="26" stroke="#4fc3f7" stroke-width="0.8" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Contribution Tracking</h3>
+          <p class="feature-desc">Full operation attribution — which agent did what, files touched, knowledge produced, tools invoked.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture Section -->
+  <section class="architecture" id="architecture">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Architecture</span>
+        <h2 class="section-title">Modular. Governed.<br>Production-Ready.</h2>
+        <p class="section-desc">A multi-component platform designed for security, traceability, and extensibility.</p>
+      </div>
+      <div class="arch-grid">
+        <div class="arch-card arch-card-primary">
+          <div class="arch-card-header">
+            <span class="arch-icon">S</span>
+            <h3>Server</h3>
+          </div>
+          <p>Core control plane — authentication, asset governance, state machines, operation ledger, and proof substrate.</p>
+          <span class="arch-tech">Node.js 22+ &middot; SQLite &middot; Pactium</span>
+        </div>
+        <div class="arch-card">
+          <div class="arch-card-header">
+            <span class="arch-icon">W</span>
+            <h3>Web Console</h3>
+          </div>
+          <p>Interactive workspace browser — audit views, agent configuration, knowledge explorer, asset management.</p>
+          <span class="arch-tech">Vue 3 &middot; Element Plus</span>
+        </div>
+        <div class="arch-card">
+          <div class="arch-card-header">
+            <span class="arch-icon">C</span>
+            <h3>CLI Client</h3>
+          </div>
+          <p>Native command-line client — local adapters, MCP bridge configuration, snapshot management.</p>
+          <span class="arch-tech">Rust</span>
+        </div>
+        <div class="arch-card">
+          <div class="arch-card-header">
+            <span class="arch-icon">D</span>
+            <h3>Desktop App</h3>
+          </div>
+          <p>Cross-platform desktop application with native system integration and workspace management GUI.</p>
+          <span class="arch-tech">Flutter</span>
+        </div>
+        <div class="arch-card">
+          <div class="arch-card-header">
+            <span class="arch-icon">M</span>
+            <h3>MCP Connector</h3>
+          </div>
+          <p>One-line install agent connector for immediate workspace participation and tool access.</p>
+          <span class="arch-tech">Node.js &middot; MCP Protocol</span>
+        </div>
+        <div class="arch-card">
+          <div class="arch-card-header">
+            <span class="arch-icon">P</span>
+            <h3>Proof Substrate</h3>
+          </div>
+          <p>Cryptographic operation proof lifecycle — verifiable receipts, evidence binding, and durable workspace evidence.</p>
+          <span class="arch-tech">Pactium v0.2</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integrations Section -->
+  <section class="integrations" id="integrations">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Integrations</span>
+        <h2 class="section-title">Works With Your<br>AI Agent Stack</h2>
+        <p class="section-desc">Native support for leading AI agent frameworks and development tools.</p>
+      </div>
+      <div class="integrations-list">
+        <div class="integration-item">
+          <div class="integration-name">Kilo Code</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-name">Claude Code</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-name">Codex</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-name">Cursor</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-name">GitHub Copilot</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-name">OpenCode</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-name">Antigravity</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-name">OpenClaw</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-name">Hermes Agent</div>
+        </div>
+      </div>
+      <div class="integrations-extra">
+        <p>Plus integrations with <strong>Gerrit</strong>, <strong>GitHub/GitLab</strong>, <strong>Dify</strong>, <strong>RAGFlow</strong>, and custom model providers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Start Building with LicoLite</h2>
+        <p class="cta-desc">Join the early access program and bring governed multi-agent collaboration to your workflow.</p>
+        <div class="cta-actions">
+          <a href="https://github.com/LicoLite/licolite" class="btn btn-primary" target="_blank" rel="noopener">
+            Get Started
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="cta-install">
+          <code>npx @licolite/mcp-connector init</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/favicon.svg" alt="LicoLite" width="24" height="24">
+          <span class="footer-wordmark">LICOLITE</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/LicoLite/licolite" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/LicoLite/licolite/issues" target="_blank" rel="noopener">Issues</a>
+          <a href="https://github.com/LicoLite/licolite/blob/main/LICENSE" target="_blank" rel="noopener">License</a>
+        </div>
+        <div class="footer-copy">
+          <span>&copy; 2026 LicoLite. GPL-3.0-or-later.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Minimal nav scroll effect
+    const nav = document.getElementById('nav');
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          nav.classList.toggle('nav-scrolled', window.scrollY > 40);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+  </script>
+</body>
+</html>
