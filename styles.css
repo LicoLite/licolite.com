@@ -464,6 +464,9 @@ img {
 }
 
 .arch-card {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  align-items: start;
   padding: 28px;
   border-radius: 12px;
   background: rgba(18, 19, 24, 0.6);
@@ -516,15 +519,22 @@ img {
   font-size: 13.5px;
   line-height: 1.6;
   color: var(--slate);
-  margin-bottom: 14px;
+  margin-bottom: 24px;
 }
 
 .arch-tech {
+  align-self: end;
+  justify-self: start;
   font-family: var(--font-mono);
   font-size: 11px;
   color: var(--crystal);
   opacity: 0.6;
   letter-spacing: 0.3px;
+}
+
+.arch-tech-link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 /* ── Integrations Section ──────────────────────────────────────────────────── */
@@ -563,6 +573,10 @@ img {
   height: 18px;
   opacity: 0.65;
   transition: opacity 0.3s;
+}
+
+.integration-icon-image {
+  filter: invert(1);
 }
 
 .integration-item:hover .integration-icon {
