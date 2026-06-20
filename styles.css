@@ -20,9 +20,9 @@
   --ice: #4fc3f7;
   --ice-light: #80deea;
   --violet: #a78bfa;
-  --obsidian: #1e1d22;
-  --obsidian-light: #27262c;
-  --obsidian-surface: #302f36;
+  --obsidian: #131217;
+  --obsidian-light: #1b1a20;
+  --obsidian-surface: #232229;
   --linen: #ede6d6;
   --linen-dim: #b0a899;
   --slate: #5a6a7a;
@@ -81,7 +81,7 @@ img {
 }
 
 .nav-scrolled {
-  background: rgba(30, 29, 34, 0.88);
+  background: rgba(19, 18, 23, 0.9);
   backdrop-filter: blur(20px) saturate(1.2);
   -webkit-backdrop-filter: blur(20px) saturate(1.2);
   border-bottom-color: rgba(201, 169, 110, 0.08);
@@ -388,14 +388,14 @@ img {
 .feature-card {
   padding: 32px;
   border-radius: 12px;
-  background: rgba(48, 47, 54, 0.4);
+  background: rgba(35, 34, 41, 0.4);
   border: 1px solid rgba(201, 169, 110, 0.06);
   transition: border-color 0.3s, background 0.3s, transform 0.3s;
 }
 
 .feature-card:hover {
   border-color: rgba(201, 169, 110, 0.12);
-  background: rgba(48, 47, 54, 0.7);
+  background: rgba(35, 34, 41, 0.7);
   transform: translateY(-2px);
 }
 
@@ -422,7 +422,7 @@ img {
 /* ── Architecture Section ──────────────────────────────────────────────────── */
 .architecture {
   padding: var(--section-pad) 0;
-  background: linear-gradient(180deg, transparent 0%, rgba(48, 47, 54, 0.3) 50%, transparent 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(35, 34, 41, 0.3) 50%, transparent 100%);
 }
 
 .arch-grid {
@@ -434,7 +434,7 @@ img {
 .arch-card {
   padding: 28px;
   border-radius: 12px;
-  background: rgba(30, 29, 34, 0.6);
+  background: rgba(19, 18, 23, 0.6);
   border: 1px solid rgba(79, 195, 247, 0.06);
   transition: border-color 0.3s, transform 0.3s;
 }
@@ -513,14 +513,14 @@ img {
 .integration-item {
   padding: 12px 24px;
   border-radius: 8px;
-  background: rgba(48, 47, 54, 0.5);
+  background: rgba(35, 34, 41, 0.5);
   border: 1px solid rgba(201, 169, 110, 0.06);
   transition: border-color 0.3s, background 0.3s;
 }
 
 .integration-item:hover {
   border-color: rgba(201, 169, 110, 0.15);
-  background: rgba(48, 47, 54, 0.8);
+  background: rgba(35, 34, 41, 0.8);
 }
 
 .integration-name {
@@ -548,7 +548,7 @@ img {
 .quickstart {
   padding: var(--section-pad) 0;
   position: relative;
-  background: linear-gradient(180deg, rgba(48, 47, 54, 0.2) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(35, 34, 41, 0.2) 0%, transparent 100%);
 }
 
 .quickstart-grid {
@@ -563,7 +563,7 @@ img {
   gap: 20px;
   padding: 28px;
   border-radius: 12px;
-  background: rgba(30, 29, 34, 0.5);
+  background: rgba(19, 18, 23, 0.5);
   border: 1px solid rgba(201, 169, 110, 0.08);
   transition: border-color 0.3s, transform 0.3s;
 }
@@ -613,7 +613,7 @@ img {
   font-size: 12.5px;
   padding: 8px 16px;
   border-radius: 6px;
-  background: rgba(48, 47, 54, 0.8);
+  background: rgba(35, 34, 41, 0.8);
   border: 1px solid rgba(79, 195, 247, 0.1);
   color: var(--ice);
   letter-spacing: 0.2px;

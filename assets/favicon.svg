@@ -17,7 +17,7 @@
   </defs>
 
   <!-- Background circle -->
-  <circle cx="32" cy="32" r="32" fill="#1e1d22"/>
+  <circle cx="32" cy="32" r="32" fill="#131217"/>
 
   <!-- Outer hexagon -->
   <polygon fill="none"
