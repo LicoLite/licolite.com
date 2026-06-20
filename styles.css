@@ -197,8 +197,8 @@ img {
 
 .hero-icon {
   margin: 0 auto 40px;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   animation: float 8s ease-in-out infinite;
 }
 
@@ -544,64 +544,100 @@ img {
   font-weight: 400;
 }
 
-/* ── CTA Section ───────────────────────────────────────────────────────────── */
-.cta {
+/* ── Quick Start Section ───────────────────────────────────────────────────── */
+.quickstart {
   padding: var(--section-pad) 0;
-  text-align: center;
   position: relative;
+  background: linear-gradient(180deg, rgba(22, 22, 42, 0.2) 0%, transparent 100%);
 }
 
-.cta::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
-  height: 400px;
+.quickstart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.quickstart-step {
+  display: flex;
+  gap: 20px;
+  padding: 28px;
+  border-radius: 12px;
+  background: rgba(10, 10, 20, 0.5);
+  border: 1px solid rgba(201, 169, 110, 0.08);
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.quickstart-step:hover {
+  border-color: rgba(201, 169, 110, 0.15);
+  transform: translateY(-2px);
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
-  background: radial-gradient(ellipse, rgba(201, 169, 110, 0.02) 0%, transparent 60%);
-  pointer-events: none;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 600;
+  background: linear-gradient(135deg, rgba(201, 169, 110, 0.12), rgba(201, 169, 110, 0.04));
+  border: 1px solid rgba(201, 169, 110, 0.2);
+  color: var(--gold);
 }
 
-.cta-content {
-  position: relative;
-}
-
-.cta-title {
+.step-content h3 {
   font-family: var(--font-display);
-  font-size: clamp(28px, 3.5vw, 38px);
-  font-weight: 300;
-  color: var(--linen);
-  margin-bottom: 12px;
-}
-
-.cta-desc {
   font-size: 15px;
+  font-weight: 500;
+  color: var(--linen);
+  margin-bottom: 8px;
+}
+
+.step-content p {
+  font-size: 13.5px;
+  line-height: 1.6;
   color: var(--slate);
-  margin-bottom: 32px;
-  max-width: 440px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 14px;
 }
 
-.cta-actions {
-  margin-bottom: 24px;
-}
-
-.cta-install {
+.code-block {
   display: inline-block;
 }
 
-.cta-install code {
+.code-block code {
   font-family: var(--font-mono);
-  font-size: 13px;
-  padding: 10px 20px;
-  border-radius: 8px;
-  background: rgba(22, 22, 42, 0.6);
+  font-size: 12.5px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: rgba(22, 22, 42, 0.8);
   border: 1px solid rgba(79, 195, 247, 0.1);
   color: var(--ice);
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
+  display: inline-block;
+}
+
+.quickstart-alt {
+  text-align: center;
+  padding-top: 32px;
+  border-top: 1px solid rgba(201, 169, 110, 0.06);
+}
+
+.quickstart-alt h4 {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--linen-dim);
+  margin-bottom: 8px;
+}
+
+.quickstart-alt p {
+  font-size: 13.5px;
+  color: var(--slate);
+  margin-bottom: 16px;
 }
 
 /* ── Footer ────────────────────────────────────────────────────────────────── */
@@ -669,8 +705,12 @@ img {
   }
 
   .hero-icon {
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
+  }
+
+  .quickstart-grid {
+    grid-template-columns: 1fr;
   }
 
   .hero-title-main {
@@ -719,6 +759,7 @@ img {
 
 /* ── Animations ────────────────────────────────────────────────────────────── */
 @media (prefers-reduced-motion: no-preference) {
+  .quickstart-step,
   .feature-card,
   .arch-card,
   .integration-item {
@@ -726,6 +767,10 @@ img {
     transform: translateY(20px);
     animation: fadeUp 0.6s ease forwards;
   }
+
+  .quickstart-step:nth-child(1) { animation-delay: 0.05s; }
+  .quickstart-step:nth-child(2) { animation-delay: 0.15s; }
+  .quickstart-step:nth-child(3) { animation-delay: 0.25s; }
 
   .feature-card:nth-child(1) { animation-delay: 0.05s; }
   .feature-card:nth-child(2) { animation-delay: 0.1s; }

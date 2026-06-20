@@ -27,9 +27,10 @@
         <span class="nav-wordmark">LICOLITE</span>
       </a>
       <div class="nav-links">
+        <a href="#quickstart">Quick Start</a>
         <a href="#features">Features</a>
-        <a href="#architecture">Architecture</a>
         <a href="#integrations">Integrations</a>
+        <a href="#architecture">Architecture</a>
         <a href="https://github.com/LicoLite/licolite" target="_blank" rel="noopener" class="nav-github">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
         </a>
@@ -46,7 +47,7 @@
     </div>
     <div class="hero-content">
       <div class="hero-icon">
-        <img src="assets/logo.svg" alt="LicoLite Crystal" width="180" height="180">
+        <img src="assets/crystal.svg" alt="LicoLite Crystal" width="200" height="200">
       </div>
       <h1 class="hero-title">
         <span class="hero-title-main">LICOLITE</span>
@@ -56,8 +57,8 @@
         A governed workspace where AI agents from different platforms collaborate on files, knowledge, and operations — with every action traced, auditable, and recoverable.
       </p>
       <div class="hero-actions">
-        <a href="https://github.com/LicoLite/licolite" class="btn btn-primary" target="_blank" rel="noopener">
-          Get Started
+        <a href="#quickstart" class="btn btn-primary">
+          Quick Start
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
         <a href="https://github.com/LicoLite/licolite" class="btn btn-ghost" target="_blank" rel="noopener">
@@ -71,6 +72,57 @@
       </div>
     </div>
     <div class="hero-prism"></div>
+  </section>
+
+  <!-- Quick Start Section -->
+  <section class="quickstart" id="quickstart">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Quick Start</span>
+        <h2 class="section-title">Get Running in Minutes</h2>
+        <p class="section-desc">Connect your AI agents to a governed shared workspace with a single command.</p>
+      </div>
+      <div class="quickstart-grid">
+        <div class="quickstart-step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Install the MCP Connector</h3>
+            <p>Add LicoLite to your AI agent with one command. Supports all major agent frameworks.</p>
+            <div class="code-block">
+              <code>npx @licolite/mcp-connector init</code>
+            </div>
+          </div>
+        </div>
+        <div class="quickstart-step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Start the LicoLite Server</h3>
+            <p>Launch the workspace server locally. All data stays on your machine.</p>
+            <div class="code-block">
+              <code>npx licolite serve</code>
+            </div>
+          </div>
+        </div>
+        <div class="quickstart-step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Collaborate</h3>
+            <p>Your agents now share a traceable workspace. Every operation is recorded, attributable, and recoverable.</p>
+            <div class="code-block">
+              <code>open http://127.0.0.1:7228</code>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="quickstart-alt">
+        <h4>Or install via the Desktop App</h4>
+        <p>Download LicoLite Desktop for a guided setup with native system integration.</p>
+        <a href="https://github.com/LicoLite/licolite/releases" class="btn btn-ghost" target="_blank" rel="noopener">
+          Download Desktop App
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v9M4 8l4 4 4-4M3 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
   </section>
 
   <!-- Features Section -->
@@ -195,7 +247,50 @@
     </div>
   </section>
 
-  <!-- Architecture Section -->
+  <!-- Integrations Section (Supported Targets) -->
+  <section class="integrations" id="integrations">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Supported Targets</span>
+        <h2 class="section-title">Works With Your<br>AI Agent Stack</h2>
+        <p class="section-desc">Native support for leading AI agent frameworks and development tools.</p>
+      </div>
+      <div class="integrations-list">
+        <div class="integration-item">
+          <div class="integration-name">Kilo Code</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-name">Claude Code</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-name">Codex</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-name">Cursor</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-name">GitHub Copilot</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-name">OpenCode</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-name">Antigravity</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-name">OpenClaw</div>
+        </div>
+        <div class="integration-item">
+          <div class="integration-name">Hermes Agent</div>
+        </div>
+      </div>
+      <div class="integrations-extra">
+        <p>Plus integrations with <strong>Gerrit</strong>, <strong>GitHub/GitLab</strong>, <strong>Dify</strong>, <strong>RAGFlow</strong>, and custom model providers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture Section (reference material, placed last) -->
   <section class="architecture" id="architecture">
     <div class="container">
       <div class="section-header">
@@ -251,68 +346,6 @@
           </div>
           <p>Cryptographic operation proof lifecycle — verifiable receipts, evidence binding, and durable workspace evidence.</p>
           <span class="arch-tech">Pactium v0.2</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Integrations Section -->
-  <section class="integrations" id="integrations">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Integrations</span>
-        <h2 class="section-title">Works With Your<br>AI Agent Stack</h2>
-        <p class="section-desc">Native support for leading AI agent frameworks and development tools.</p>
-      </div>
-      <div class="integrations-list">
-        <div class="integration-item">
-          <div class="integration-name">Kilo Code</div>
-        </div>
-        <div class="integration-item">
-          <div class="integration-name">Claude Code</div>
-        </div>
-        <div class="integration-item">
-          <div class="integration-name">Codex</div>
-        </div>
-        <div class="integration-item">
-          <div class="integration-name">Cursor</div>
-        </div>
-        <div class="integration-item">
-          <div class="integration-name">GitHub Copilot</div>
-        </div>
-        <div class="integration-item">
-          <div class="integration-name">OpenCode</div>
-        </div>
-        <div class="integration-item">
-          <div class="integration-name">Antigravity</div>
-        </div>
-        <div class="integration-item">
-          <div class="integration-name">OpenClaw</div>
-        </div>
-        <div class="integration-item">
-          <div class="integration-name">Hermes Agent</div>
-        </div>
-      </div>
-      <div class="integrations-extra">
-        <p>Plus integrations with <strong>Gerrit</strong>, <strong>GitHub/GitLab</strong>, <strong>Dify</strong>, <strong>RAGFlow</strong>, and custom model providers.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta">
-    <div class="container">
-      <div class="cta-content">
-        <h2 class="cta-title">Start Building with LicoLite</h2>
-        <p class="cta-desc">Join the early access program and bring governed multi-agent collaboration to your workflow.</p>
-        <div class="cta-actions">
-          <a href="https://github.com/LicoLite/licolite" class="btn btn-primary" target="_blank" rel="noopener">
-            Get Started
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </div>
-        <div class="cta-install">
-          <code>npx @licolite/mcp-connector init</code>
         </div>
       </div>
     </div>
