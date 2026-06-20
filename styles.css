@@ -702,53 +702,95 @@ img {
   display: inline-block;
 }
 
+.code-block-prominent code {
+  font-size: 13px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border-color: rgba(86, 212, 232, 0.12);
+}
+
+.deploy-client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.deploy-client-desc {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--slate);
+  max-width: 340px;
+}
+
+.deploy-client-or {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.deploy-client-or::before,
+.deploy-client-or::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(228, 184, 74, 0.06);
+}
+
+.deploy-client-or span {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--slate);
+  white-space: nowrap;
+}
+
 /* ── Footer ────────────────────────────────────────────────────────────────── */
 .footer {
-  padding: 40px 0;
+  padding: 20px 32px;
   border-top: 1px solid rgba(228, 184, 74, 0.05);
-}
-
-.footer-inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.footer-brand {
-  display: flex;
   align-items: center;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-.footer-wordmark {
-  font-family: var(--font-display);
-  font-size: 12px;
-  font-weight: 300;
-  letter-spacing: 3px;
+.footer-left {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.5px;
   color: var(--slate);
+}
+
+.footer-left a {
+  color: var(--linen);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.footer-left a:hover {
+  color: var(--amber);
 }
 
 .footer-links {
   display: flex;
-  gap: 24px;
+  gap: 20px;
 }
 
 .footer-links a {
-  font-size: 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.5px;
   color: var(--slate);
+  text-decoration: none;
   transition: color 0.2s;
 }
 
 .footer-links a:hover {
-  color: var(--linen-dim);
-}
-
-.footer-copy {
-  font-size: 11px;
-  color: var(--slate);
-  opacity: 0.6;
+  color: var(--linen);
 }
 
 /* ── Responsive ────────────────────────────────────────────────────────────── */
@@ -791,7 +833,7 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .footer-inner {
+  .footer {
     flex-direction: column;
     text-align: center;
   }

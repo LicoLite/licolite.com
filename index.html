@@ -100,31 +100,18 @@
               <p class="deploy-path-subtitle">For individual developers &amp; small teams</p>
             </div>
           </div>
-          <div class="deploy-steps">
-            <div class="deploy-step">
-              <div class="step-number">1</div>
-              <div class="step-content">
-                <h4>Download the client</h4>
-                <p>One binary, zero dependencies. The client handles everything.</p>
-                <div class="code-block"><code>curl -fsSL https://licolite.com/install | sh</code></div>
-              </div>
+          <div class="deploy-client">
+            <p class="deploy-client-desc">One command installs the CLI. It handles server setup, agent discovery, and MCP provisioning automatically.</p>
+            <div class="code-block code-block-prominent">
+              <code>curl -fsSL https://licolite.com/install | sh</code>
             </div>
-            <div class="deploy-step">
-              <div class="step-number">2</div>
-              <div class="step-content">
-                <h4>Launch workspace</h4>
-                <p>Client pulls the server runtime, builds locally, starts the workspace.</p>
-                <div class="code-block"><code>licolite up</code></div>
-              </div>
+            <div class="deploy-client-or">
+              <span>or download the desktop app</span>
             </div>
-            <div class="deploy-step">
-              <div class="step-number">3</div>
-              <div class="step-content">
-                <h4>Connect your agents</h4>
-                <p>Automatically installs MCP to all detected agents and establishes connections.</p>
-                <div class="code-block"><code>licolite agents setup</code></div>
-              </div>
-            </div>
+            <a href="https://github.com/LicoLite/licolite/releases" class="btn btn-ghost" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v9M4 8l4 4 4-4M3 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Download Installer
+            </a>
           </div>
         </div>
 
@@ -450,22 +437,12 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <img src="assets/favicon.svg" alt="LicoLite" width="24" height="24">
-          <span class="footer-wordmark">LICOLITE</span>
-        </div>
-        <div class="footer-links">
-          <a href="https://github.com/LicoLite/licolite" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://github.com/LicoLite/licolite/issues" target="_blank" rel="noopener">Issues</a>
-          <a href="https://github.com/LicoLite/licolite/blob/main/LICENSE" target="_blank" rel="noopener">License</a>
-        </div>
-        <div class="footer-copy">
-          <span>&copy; 2026 LicoLite. GPL-3.0-or-later.</span>
-        </div>
-      </div>
-    </div>
+    <span class="footer-left">&copy; 2026 <a href="/">LicoLite</a></span>
+    <nav class="footer-links">
+      <a href="https://github.com/LicoLite/licolite" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/LicoLite/licolite/issues" target="_blank" rel="noopener">Issues</a>
+      <a href="https://github.com/LicoLite/licolite/blob/main/LICENSE" target="_blank" rel="noopener">License</a>
+    </nav>
   </footer>
 
   <script>
