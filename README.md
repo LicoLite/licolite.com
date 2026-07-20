@@ -10,7 +10,8 @@ licomesh.com/
 ├── styles.css                         # Calm technical layout system
 ├── CNAME                              # GitHub Pages custom domain
 ├── assets/
-│   └── favicon.svg                    # Square slash favicon
+│   ├── favicon.svg                    # Square slash favicon
+│   └── hero-mesh.svg                  # Hero mesh diagram
 └── dns/
     └── cloudflare-github-pages.txt    # Cloudflare BIND import for GitHub Pages
 ```
