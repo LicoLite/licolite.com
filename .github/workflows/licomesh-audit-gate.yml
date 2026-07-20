@@ -1,4 +1,4 @@
-name: licolite-audit-gate
+name: licomesh-audit-gate
 
 on:
   pull_request:
@@ -11,8 +11,8 @@ permissions:
   contents: read
 
 jobs:
-  licolite-audit-gate:
-    name: licolite-audit-gate
+  licomesh-audit-gate:
+    name: licomesh-audit-gate
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     steps:
@@ -25,10 +25,10 @@ jobs:
       - name: Checkout audit source of truth
         uses: actions/checkout@v5
         with:
-          repository: LicoLite/licolite-audit
+          repository: LicoLand/licomesh-audit
           ref: only
           fetch-depth: 0
-          path: licolite-audit
+          path: licomesh-audit
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -37,16 +37,16 @@ jobs:
 
       - name: Verify audit source of truth
         run: |
-          licolite-audit/bin/licolite-audit source-of-truth \
-            --repo licolite-audit \
+          licomesh-audit/bin/licomesh-audit source-of-truth \
+            --repo licomesh-audit \
             --remote origin \
             --branch only \
             --require-current-head \
             --enforce-remote-heads
 
-      - name: Run LicoLite audit gate
+      - name: Run LicoMesh audit gate
         run: |
-          licolite-audit/bin/licolite-audit gate \
+          licomesh-audit/bin/licomesh-audit gate \
             --repo target \
             --history \
             --format text
