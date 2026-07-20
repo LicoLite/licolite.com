@@ -1,12 +1,12 @@
 :root {
   color-scheme: light;
-  --bg: #f5f6f8;
-  --bg-elevated: #ffffff;
+  --bg: #d8dcdd;
+  --bg-elevated: #e4e8e9;
   --ink: #141816;
-  --muted: #5a635e;
-  --line: rgba(20, 24, 22, 0.12);
+  --muted: #4d5652;
+  --line: rgba(20, 24, 22, 0.14);
   --accent: #0f5c45;
-  --accent-soft: rgba(15, 92, 69, 0.1);
+  --accent-soft: rgba(15, 92, 69, 0.12);
   --page-x: clamp(1.25rem, 4vw, 4rem);
   --max: 1120px;
   --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
@@ -31,8 +31,8 @@ body {
   min-width: 320px;
   color: var(--ink);
   background:
-    radial-gradient(1200px 480px at 80% -10%, rgba(15, 92, 69, 0.08), transparent 60%),
-    linear-gradient(180deg, #eef1f4 0%, var(--bg) 34%, var(--bg) 100%);
+    radial-gradient(1100px 420px at 78% -8%, rgba(15, 92, 69, 0.07), transparent 58%),
+    var(--bg);
   font-family: var(--font-sans);
   font-size: 1.05rem;
   line-height: 1.6;
@@ -86,7 +86,7 @@ a:hover {
   min-height: 4rem;
   padding: 0 var(--page-x);
   border-bottom: 1px solid var(--line);
-  background: rgba(245, 246, 248, 0.88);
+  background: rgba(216, 220, 221, 0.9);
   backdrop-filter: blur(10px);
 }
 
@@ -139,10 +139,10 @@ a:hover {
   inset: 0;
   background: linear-gradient(
     105deg,
-    rgba(245, 246, 248, 0.96) 0%,
-    rgba(245, 246, 248, 0.88) 38%,
-    rgba(245, 246, 248, 0.28) 68%,
-    rgba(245, 246, 248, 0.08) 100%
+    rgba(216, 220, 221, 0.97) 0%,
+    rgba(216, 220, 221, 0.9) 36%,
+    rgba(216, 220, 221, 0.35) 66%,
+    rgba(216, 220, 221, 0.1) 100%
   );
   pointer-events: none;
 }
@@ -150,7 +150,7 @@ a:hover {
 .hero-plane {
   position: absolute;
   inset: 0;
-  color: rgba(20, 24, 22, 0.2);
+  color: rgba(20, 24, 22, 0.55);
   pointer-events: none;
 }
 
@@ -158,6 +158,8 @@ a:hover {
   display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: right center;
 }
 
 .hero-copy {
