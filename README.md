@@ -6,9 +6,8 @@ Official product website for [LicoMesh](https://github.com/LicoLand/LicoMesh), a
 
 ```text
 licomesh.com/
-├── index.html                         # LicoMesh introduction page
-├── styles.css                         # Kinetic type and responsive visual system
-├── experience.js                      # Optical field and interaction layer
+├── index.html                         # Product introduction page
+├── styles.css                         # Calm technical layout system
 ├── CNAME                              # GitHub Pages custom domain
 ├── assets/
 │   └── favicon.svg                    # Square slash favicon
