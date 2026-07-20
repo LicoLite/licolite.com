@@ -37,7 +37,7 @@ jobs:
 
       - name: Verify audit source of truth
         run: |
-          lico-auditor/bin/licomesh-audit source-of-truth \
+          lico-auditor/bin/lico-auditor source-of-truth \
             --repo lico-auditor \
             --remote origin \
             --branch only \
@@ -46,7 +46,7 @@ jobs:
 
       - name: Run LicoMesh audit gate
         run: |
-          lico-auditor/bin/licomesh-audit gate \
+          lico-auditor/bin/lico-auditor gate \
             --repo target \
             --history \
             --format text
