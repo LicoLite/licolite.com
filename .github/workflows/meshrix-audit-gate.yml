@@ -1,4 +1,4 @@
-name: licomesh-audit-gate
+name: meshrix-audit-gate
 
 on:
   pull_request:
@@ -11,8 +11,8 @@ permissions:
   contents: read
 
 jobs:
-  licomesh-audit-gate:
-    name: licomesh-audit-gate
+  meshrix-audit-gate:
+    name: meshrix-audit-gate
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     steps:
@@ -44,7 +44,7 @@ jobs:
             --require-current-head \
             --enforce-remote-heads
 
-      - name: Run LicoMesh audit gate
+      - name: Run Meshrix audit gate
         run: |
           lico-auditor/bin/lico-auditor gate \
             --repo target \
